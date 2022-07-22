@@ -1,0 +1,36 @@
+.autocomplete {
+    position: absolute;
+    left: 20px;
+    z-index: 1
+}
+
+.autocompleteContent {
+    background-color: #fff;
+    width: 300px;
+    color: #000;
+}
+
+.autocompleteElement {
+    border-bottom: 2px solid #00bdbd;
+}
+
+.autocompleteTitle {
+    padding: 10px 0;
+    font: bold;
+    background-color: #cfcfcf;
+}
+
+.autocompleteDescription {
+    padding: 10px 10px;
+    background-color: #7c7c7c;
+}
+
+.title {
+    margin: 10px;
+    cursor: pointer;
+}
+
+.description {
+    margin: 10px;
+    color: #ffffff;
+}

@@ -1,0 +1,30 @@
+@media screen and (max-width: 700px) {
+
+    .navbar {
+        display: block;
+    }
+
+    .navbar__links {
+        display: none;
+    }
+
+    .navbar__links2 {
+        display: block;
+        z-index: 1;
+    }
+
+    .link {
+        display: block;
+        width: 100%;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    .menuIcon {
+        display: block;
+        position: absolute;
+        margin-top: 10px;
+        margin-left: 20px;
+    }
+
+}

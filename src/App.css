@@ -1,0 +1,65 @@
+body {
+  background-color: #282c34;
+}
+
+.navbar {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #d3d3d3;
+}
+
+.navbar__links {
+  margin: auto;
+}
+
+.navbar__links2 {
+  position: absolute;
+  display: none;
+  width: 300px;
+  background-color: #a7a7a7;
+  top: 50px;
+}
+
+.menuIcon {
+  display: none;
+  cursor: pointer;
+}
+
+.link {
+  margin: 0 20px;
+  padding: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  border: 1px solid #008080;
+}
+
+.link:hover {
+  background-color: #008080;
+  color: #fff;
+}
+
+.Board {
+  position: relative;
+  margin: 0 auto;
+  background-color: #000;
+  background-image:
+      linear-gradient(#333 1px, transparent 1px),
+      linear-gradient(90deg, #333 1px, transparent 1px);
+}
+
+.Cell {
+  background-color: #ffd700;
+  position: absolute;
+}
+
+.controls {
+  margin-top: 20px;
+}
+
+.button {
+  margin-left: 12px;
+  cursor: pointer;
+}

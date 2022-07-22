@@ -1,0 +1,29 @@
+.MyGame {
+    text-align: center;
+}
+
+.MyGameContent {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.MyGameTable {
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.td {
+    width: 18px;
+    height: 18px;
+    border: 1px solid #888888;
+}
+
+.td.white{
+    background-color: #dddddd;
+}
