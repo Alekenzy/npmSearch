@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
 import Header from '../Header/Header';
 import cl from "./Body.module.css";
-// import { Outlet } from 'react-router-dom';
-import BodyContent from '../BodyContent/BodyContent';
-// import OpenNecessaryPackage from '../OpenNecessaryPackage/OpenNecessaryPackage';
+import { Outlet } from 'react-router-dom';
 
 const Body = () => {
 
@@ -13,8 +11,7 @@ const Body = () => {
     <div className={cl.body}>
         <div className={cl.bodyContent}>
             <Header setSearch={setSearch}/>
-            <BodyContent search={search}/>
-            {/* <Outlet /> */}
+            <Outlet context={search}/>
         </div>
     </div>
   )

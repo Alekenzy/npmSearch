@@ -1,13 +1,16 @@
 import React, {useState} from "react";
 import cl from "./NpmSearch.module.css";
 import AutoComplete from "../AutoComplete/AutoComplete";
+import { useNavigate } from "react-router-dom";
 
 const NpmSearch = ({setSearch}) => {
 
   const [query, setQuery] = useState("");
+  const navigate = useNavigate();
 
   const submit = (e) => {
     e.preventDefault();
+    navigate(`/npmSearch/search_results`);
     setSearch(query);
     setQuery("");
   }

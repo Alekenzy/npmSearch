@@ -15,6 +15,7 @@ const ItemBlocks = ({search}) => {
   })
 
   useEffect(() => {
+    if(!search) return;
     fetching(search);
   }, [search])
 
@@ -31,7 +32,7 @@ const ItemBlocks = ({search}) => {
               return (
               <div key={obj.package.name} className={cl.objects} >
                 <div className={cl.titleOfLi}>
-                  <span className={cl.titleOfLiTitle} onClick={()=>{navigate(`/npmSearch/${obj.package.name}`)}}>{obj.package.name}</span>
+                  <span className={cl.titleOfLiTitle} onClick={()=>{navigate(`/npmSearch/search_results/${obj.package.name}`)}}>{obj.package.name}</span>
                 </div>
                 <div className={cl.descriptionOfLi}>
                   {obj.package.description}

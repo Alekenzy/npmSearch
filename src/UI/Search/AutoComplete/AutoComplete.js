@@ -19,6 +19,9 @@ const AutoComplete = ({query}) => {
   }, [query])
 
   function rendering() {
+    if(!datta) {
+      return;
+    }
   if(loading) {
     return (
       <div className={cl.autocomplete}>
@@ -36,9 +39,6 @@ const AutoComplete = ({query}) => {
           </div>
     </div>
     )
-  }
-  if(!datta) {
-    return;
   }
   return (
     <div className={cl.autocomplete}>
